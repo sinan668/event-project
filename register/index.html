@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <section class="main-section">
+        <div class="login-section">
+            <h2>Register</h2>
+            <form style="margin-top: 20px;">
+                <input class="input-text" type="text" placeholder="Username" required />
+                <input class="input-text" type="email" placeholder="Email" required />
+                <input class="input-text" type="password" placeholder="Password" required />
+                <div style="display: flex;">
+                    <input type="radio" name="role" value="Employ" onclick="showFields()"> Employ
+                    <input type="radio" name="role" value="provider" onclick="showFields()"> work provide
+                </div>
+                <div id="employBox" style="display: none;">
+                    <h4 style="font-size: 15px;">Enter Your Details</h4>
+                    <input class="input-text" type="text" placeholder="Your Skills" style="margin-top: -10px;">
+                    <input class="input-text" type="text" placeholder="Your age">
+                    <div style="font-size: 15px;">
+                        <input type="radio" name="genter" > Maile
+                        <input type="radio" name="genter"> femaile
+                        <input type="radio" name="genter" > other
+                    </div>
+                </div>
+                <div id="providerBox" style="display: none;">
+                    <h4 style="font-size: 15px;">Enter Job Details</h4>
+                    <input class="input-text" type="text" placeholder="Company Name" style="margin-top: -10px;">
+                    <input class="input-text" type="text" placeholder="Job Location">
+                </div>
+            </form>
+            <div>
+                <button type="submit" class="login-button">Sign In</button>
+                <p>have you an accoun? <a href="../login/index.html">login</a></p>
+            </div>
+        </div>
+    </section>
+    <script>
+        function showFields() {
+        
+          // Get selected radio value
+          let role = document.querySelector('input[name="role"]:checked').value;
+          
+          // Hide both first
+          document.getElementById("employBox").style.display = "none";
+          document.getElementById("providerBox").style.display = "none";
+        
+          // Show based on selection
+          if (role === "Employ") {
+            document.getElementById("employBox").style.display = "block";
+          }
+        
+          if (role === "provider") {
+            document.getElementById("providerBox").style.display = "block";
+          }
+        }
+    </script>
+</body>
+</html>
