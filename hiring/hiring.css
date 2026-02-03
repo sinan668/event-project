@@ -1,0 +1,31 @@
+.sectio{
+    display: flex;
+    justify-content: center;
+}
+.hdata{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   border-radius: 12px;
+   width: 350px;
+   height: 350px;
+   backdrop-filter: blur(10px);
+    background: rgba(121, 121, 121, 0.3);
+
+}
+input{
+    width: 250px;
+    height: 30px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 20px;
+}
+.sub{
+    margin-top: 15px;
+    background-color: midnightblue;
+    color: white;
+}
+.sub:hover{
+    transform: scale(1.010);
+}
