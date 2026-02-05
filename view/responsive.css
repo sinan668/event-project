@@ -1,0 +1,57 @@
+@media (max-width:741px){
+   #search .search2{
+    width: 200px;
+   } 
+   .logo h1{
+    font-size: 15px;
+    margin-right: 10px;
+   }
+   .nav{
+    justify-content: flex-start;
+    gap: 20px;
+   }
+}
+@media (max-width:446px){
+    .logo{
+        display: none;
+    
+    }
+    .sign{
+        /* margin-left: 20px;
+        width: 70px; */
+
+    }
+    .search2{
+        margin-left: 10px;
+    }
+
+    .gaper{
+        margin-left: 22px;
+    }
+    .template1 .place{
+        font-size: 11px;
+        margin-right: 12px;
+
+    }
+    .template1 .datetime{
+        font-size:12px;
+        margin-left: 22px;
+    }
+    .template1 .event{
+        font-size: 12px;
+    }
+   
+}
+@media (max-width:500px){
+    .logo{
+        display: none;
+    
+    }
+    .search2{
+        margin-left: 10px;
+    }
+    
+}
+@media(max-width:390px){
+    
+}
