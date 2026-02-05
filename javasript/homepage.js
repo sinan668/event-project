@@ -9,3 +9,4 @@ function booking() {
   window.location.href="../booking/booking.html";
   
 }
+
