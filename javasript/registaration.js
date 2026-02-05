@@ -18,9 +18,14 @@ function showFields() {
   }
 }
 
+
+// login js 
+
+
 const userNameInput = document.getElementById("Username");
 const userPasswordInput = document.getElementById("password");
 const loginBtn = document.getElementById("login-button");
+const messageSection = document.getElementById("message")
 
 
 
@@ -31,11 +36,14 @@ loginBtn.addEventListener('click',function(){
 
 
     if(Username === ""){
-        alert('please enter username')
+        messageSection.textContent = "please enter user name"
+        messageSection.style.color = "red"
     }else if(password === ""){
-        alert('please enter password')
+        messageSection.textContent = "please enter user password"
+        messageSection.style.color = "red"
     }else{
-        alert('login sucssus')
+        messageSection.textContent = "login sucssusfuly"
+        messageSection.style.color = "green"
     }
 
 })
