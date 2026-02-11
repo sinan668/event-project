@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  border-bottom: 5px solid black;
+  width: 100%;
+}
+.logo{
+  margin-left: 10px;
+  max-width: 50px; 
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 60px;
+}
+
+#search {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+.search2 {
+  width: 400px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-left: 4px;
+}
+.gaper{
+  margin-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.location {
+  position: relative;
+  display: inline-block;
+}
+.drope {
+  color: black;
+  border: none;
+  background-color: white;
+}
+.todrope {
+  background-color: white;
+  color: black;
+  display: none;
+  position: absolute;
+  list-style: none;
+}
+.location:hover .todrope {
+  display: block;
+}
+.todrope li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.sign {
+  background-color: midnightblue;
+  color: white;
+  padding: clamp(2px,1vh,10px) clamp(5px,2vw,20px);
+  border-radius: 10px;
+}
+.hpage {
+  display: flex;
+  flex-direction: column;
+  padding-top: clamp(70px);
+  gap: 20px;
+  align-items: center;
+}
+.template1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  max-width: 1000px;
+  width: 90%;
+  height: 110px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+.template1 {
+  transition: transform 0.4s ease;
+}
+.template1:hover {
+  transform: scale(1.02);
+}
+.event {
+  padding-left: 10px;
+  gap: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.place {
+  padding-left: 140px;
+}
+.datetime {
+  padding-right: 10px;
+  padding-top: 60px;
+  display: flex;
+  gap: 5px;
+}
+.date {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+.time {
+  border: 1px solid black;
+  border-radius: 3px;
+}
+footer {
+  display: flex;
+  justify-content:end;
+  align-items: center;
+  gap: 20px;
+  background-color: midnightblue;
+  color: white;
+  padding-right: 33px;
+  margin-top: 20px;
+  width: 100%;
+}
